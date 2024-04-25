@@ -2,8 +2,8 @@
 
 /* commen gap properties */
 
-.gap-40 {
-  gap: 40px;
+.gap-10 {
+  gap: 10px;
 }
 
 .gap-17 {
@@ -50,28 +50,50 @@
 
 /* spacing box */
 
-.bottom-80 {
-  bottom: 80px;
-}
-
-.mt-40 {
-  margin-top: 40px;
-}
-
-.mt-100 {
-  margin-top: 100px;
+.pt-10 {
+  padding-top: 10px;
 }
 
 .pt-16 {
   padding-top: 16px;
 }
 
-.pt-10 {
-  padding-top: 10px;
-}
-
 .pt-20 {
   padding-top: 20px;
+}
+
+.px-22{
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+}
+
+.pt-26{
+  padding-top: 26px;
+}
+
+.mt-31 {
+  margin-top: 31px;
+}
+
+.pt-34{
+  padding-top: 34px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.bottom-80 {
+  bottom: 80px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* header on top */
@@ -237,6 +259,20 @@
   padding-bottom: 40px;
 }
 
+/* slider2 box */
+
+.slick-white-box {
+  min-height: 104px;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-shadow: 0px 18px 59px 0px var(--white-box-shadow);
+}
+
+.vector-img {
+  left: 31px;
+  bottom: -23px;
+}
+
 @media (min-width: 576px) {
   .commen-btn {
     width: 174px;
@@ -354,6 +390,11 @@
     left: 42%;
     transform: rotate(22deg);
   }
+
+  .py-lg-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -415,7 +456,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .resume-img{
+  .resume-img {
     height: 59vh;
   }
 }
