@@ -53,6 +53,7 @@
   --lh-61: 61px;
 
   /* Here all colors */
+  --color-f9: #F9ECE7;
   --sec2-bg: #f9f9f9;
   --color-4c: #4c4846;
   --color-33: #333333;
@@ -218,6 +219,10 @@
 
 .sec2-bg {
   background-color: var(--sec2-bg);
+}
+
+.color-f9{
+  color: var(--color-f9);
 }
 
 h2 {
