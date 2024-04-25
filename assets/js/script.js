@@ -62,3 +62,31 @@ $(".slick-slider").slick({
     },
   ],
 });
+
+// second slider box
+
+$(".main-slider-box").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
