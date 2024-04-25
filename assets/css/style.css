@@ -278,6 +278,26 @@
   padding-left: 20px;
 }
 
+/* accordian section */
+
+.accordian{
+  max-width: 856px;
+}
+
+.accordian-box{
+  border-bottom: 1px solid #E5E5E5;
+  padding-right: 33px;
+}
+
+.accordian-p{
+  max-width: 786px;
+  display: none;
+}
+
+.accordian{
+  padding-top: 50px;
+}
+
 @media (min-width: 576px) {
   .commen-btn {
     width: 174px;
@@ -413,6 +433,10 @@
 
   .pt-lg-26 {
     padding-top: 26px;
+  }
+
+  .accordian{
+    width: 856px;
   }
 }
 
