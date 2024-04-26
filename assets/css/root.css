@@ -53,6 +53,7 @@
   --lh-61: 61px;
 
   /* Here all colors */
+  --prev: #F36A3E;
   --color-f9: #F9ECE7;
   --sec2-bg: #f9f9f9;
   --color-4c: #4c4846;
@@ -64,6 +65,7 @@
   --btns-color: #f36a3e;
   --white-color: #ffffff;
   --black-color: #000000;
+  --sub-footer: #383838;
   --slider-box-shadow: #0000000a;
   --theme-img-shadow: #00000026;
   --white-box-shadow: #00000012;

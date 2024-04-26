@@ -71,8 +71,8 @@ $(".main-slider-box").slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow: false,
-  nextArrow: false,
+  prevArrow: ".prev",
+  nextArrow: ".next",
   responsive: [
     {
       breakpoint: 992,
@@ -89,4 +89,29 @@ $(".main-slider-box").slick({
       },
     },
   ],
+});
+
+// accodian
+let accordion_boxes = document.querySelectorAll(".accordian-box");
+
+accordion_boxes.forEach((items) => {
+  let accordion_title = items.querySelector(".accordian-h-svg");
+  let accordion_p = items.querySelector(".accordian-p");
+
+  accordion_title.addEventListener("click", () => {
+    accordion_boxes.forEach((otherBox) => {
+      if (otherBox !== items) {
+        let otherAccordion_p = otherBox.querySelector(".accordian-p");
+        otherAccordion_p.classList.add("d-none");
+      }
+    });
+
+    if (accordion_p.classList.contains("d-none")) {
+      accordion_p.classList.remove("d-none");
+      accordion_p.classList.add("d-inline-block");
+    } else {
+      accordion_p.classList.add("d-none");
+      accordion_p.classList.remove("d-inline-block");
+    }
+  });
 });

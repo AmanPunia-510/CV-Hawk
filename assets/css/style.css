@@ -286,19 +286,72 @@
   padding-left: 20px;
 }
 
+.what::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: -9px;
+  width: 84px;
+  height: 84px;
+  background-image: url(../images/commas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.next,
+.prev {
+  width: 41.69px;
+  height: 41.69px;
+  background-color: var(--prev);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.prev {
+  background-color: var(--white-color);
+  border: 1px solid var(--btns-color);
+  left: -4%;
+  margin-left: 12px;
+}
+
+.next {
+  right: -4%;
+  margin-right: 12px;
+}
+
+.bottom-293 {
+  bottom: 295px;
+}
+
+.slider1 {
+  margin-bottom: 10px;
+}
+
 /* accordian section */
 
 .accordian {
   max-width: 856px;
 }
 
+.accordian-h-svg {
+  cursor: pointer;
+}
+
 .accordian-box {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.accordian-svg {
   padding-right: 33px;
 }
 
 .accordian-p {
   max-width: 786px;
+}
+
+.not-show {
   display: none;
 }
 
@@ -351,6 +404,14 @@
   padding-top: 33px;
 }
 
+/* sub footer */
+
+.sub-footer {
+  border-top: 1px solid var(--sub-footer);
+  padding: 20px 12px;
+  margin-top: 70px;
+}
+
 /* all elips here */
 
 .section1-top {
@@ -363,6 +424,21 @@
 }
 
 .section3-bottom {
+  width: 100%;
+}
+
+.section3-top {
+  right: 0;
+  bottom: 0;
+}
+
+.resume-top {
+  right: 0;
+  bottom: 0;
+}
+
+.resume-bottom {
+  bottom: -20%;
   width: 100%;
 }
 
@@ -392,8 +468,12 @@
     width: auto;
   }
 
-  .section3-bottom{
+  .section3-bottom {
     width: auto;
+  }
+
+  .resume-bottom {
+    width: unset;
   }
 }
 
@@ -532,6 +612,10 @@
   .section3-bottom {
     top: 94px;
   }
+
+  .resume-bottom {
+    bottom: -64%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -612,9 +696,13 @@
   .left-2 {
     width: 308px;
   }
+
+  .bottom-293 {
+    bottom: 255px;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.9px) {
   .navbar-items {
     top: 0;
     left: -100%;
@@ -682,6 +770,15 @@
   .slick-slide {
     padding-left: 10px !important;
   }
+
+  .resume-top {
+    right: 0;
+    bottom: 46%;
+  }
+
+  .bottom-293 {
+    bottom: 19px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -695,7 +792,19 @@
     right: 0;
   }
 
+  .bottom-293 {
+    margin-top: 30px;
+  }
+
   .accordian-h {
     font-size: var(--fs-16);
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev {
+    left: 0;
   }
 }
