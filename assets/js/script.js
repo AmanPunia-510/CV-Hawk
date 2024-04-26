@@ -3,6 +3,16 @@ let items = document.querySelector(".navbar-items");
 
 menu.addEventListener("click", () => {
   items.classList.toggle("left-0");
+  let body = document.querySelector("body");
+
+  if (items.classList.contains("left-0")) {
+    body.style.position = "fixed";
+    body.style.top = "0";
+    body.style.left = "0";
+    body.style.width = "100%";
+  } else {
+    body.style.position = "unset";
+  }
 });
 
 $(".slick-slider").slick({
