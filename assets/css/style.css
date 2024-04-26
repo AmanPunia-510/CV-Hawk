@@ -119,6 +119,7 @@
   border: none;
   outline: none;
   border-radius: 41px;
+  transition: all 200ms linear;
 }
 
 .cv-builder::after {
@@ -136,6 +137,7 @@
 
 .demo-btn {
   border: 1px solid var(--btns-color);
+  transition: all 200ms linear;
   background-color: transparent;
 }
 
@@ -150,6 +152,88 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/sun.png);
+}
+
+/* main section animation here */
+
+.left-1,
+.right-2,
+.left-2,
+.right-1 {
+  animation: left-1 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes left-1 {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+}
+
+.heading1,
+.p1,
+.tow-btns,
+.bottom-1,
+.disk-img,
+.box-3d {
+  animation: heading1 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes heading1 {
+  0% {
+    filter: blur(12px) opacity(0%);
+  }
+  100% {
+    filter: blur(unset);
+  }
+}
+
+.nav {
+  animation: bounce-top 1.2s both;
+  animation-delay: 1.2s;
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-90px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 
 /* slider section */
@@ -178,7 +262,7 @@
 }
 
 .slick-current div .slider-box {
-  border: 1px solid #f36a3e66 !important;
+  border: 1px solid var(--slider-border) !important;
 }
 
 .slick-current div .slider-txt {
@@ -307,6 +391,7 @@
   border-radius: 50%;
   border: none;
   outline: none;
+  transition: all 200ms linear;
 }
 
 .prev {
@@ -340,7 +425,7 @@
 }
 
 .accordian-box {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--color-e5);
 }
 
 .accordian-svg {
@@ -396,6 +481,7 @@
   border: none;
   outline: none;
   border-radius: 41px;
+  transition: all 200ms linear;
 }
 
 /* footer-p */
@@ -440,6 +526,86 @@
 .resume-bottom {
   bottom: -20%;
   width: 100%;
+}
+
+/* hover */
+
+.commen-btn:hover {
+  color: var(--btns-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--btns-color);
+  box-shadow: 0px 0px 10px;
+}
+
+.demo-btn:hover {
+  background-color: var(--btns-color);
+  box-shadow: 0px 0px 10px var(--btns-color);
+  color: var(--white-color);
+}
+
+.start-btn:hover {
+  background-color: var(--black-color);
+  box-shadow: 0px 0px 10px var(--black-color);
+  color: var(--white-color);
+}
+
+.next:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--btns-color);
+}
+
+.next:hover svg path {
+  fill: var(--btns-color);
+}
+
+.prev:hover {
+  background-color: var(--btns-color);
+}
+
+.prev:hover svg path {
+  fill: var(--white-color);
+}
+
+.commen-btn:hover,
+.start-btn:hover,
+.next:hover,
+.prev:hover {
+  transform: scale(1.03);
+}
+
+.commen-btn:active,
+.start-btn:active,
+.next:active,
+.prev:active {
+  transform: scale(0.98);
+}
+
+.nav-list a {
+  position: relative;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0%;
+  left: 0;
+  background-color: var(--btns-color);
+  height: 2px;
+  transition: all 200ms linear;
+}
+
+.nav-list a:hover::after{
+  width: 100%;
+}
+
+.nav-list a:hover{
+  color: var(--btns-color);
+}
+
+p a:hover{
+  text-shadow: 0px 0px 10px;
+  color: var(--white-color);
 }
 
 @media (min-width: 576px) {
