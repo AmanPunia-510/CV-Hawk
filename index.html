@@ -93,8 +93,8 @@
 
     <main>
         <!-- slider section -->
-        <section class="section1 mt-100 mt-sm-120 mt-lg-160">
-            <div class="container">
+        <section class="section1 mt-100 mt-sm-120 mt-lg-160 position-relative">
+            <div class="container position-relative z-1">
                 <div class="row gap-5 gap-lg-0">
                     <div class="col-12 col-lg-6 pr-lg-36 pt-10">
                         <img src="./assets/images/theme.gif" alt="theme-img" class="theme-img w-100 h-xxl-92">
@@ -151,6 +151,8 @@
                     </div>
                 </div>
             </div>
+            <img src="./assets/images/section1-top.png" alt="section1-top" class="section1-top position-absolute">
+            <img src="./assets/images/section1-bottom.png" alt="section1-bottom" class="section1-bottom position-absolute">
         </section>
 
         <!-- Tools section -->
@@ -179,7 +181,7 @@
         </section>
 
         <!-- help section -->
-        <section class="section3 mt-100 mt-sm-120 mt-lg-160">
+        <section class="section3 mt-100 mt-sm-120 mt-lg-160 position-relative">
             <div class="container">
                 <div class="row align-items-center gap-40 gap-md-0">
                     <div class="col-12 col-md-6">
@@ -198,6 +200,7 @@
                     </div>
                 </div>
             </div>
+            <img src="./assets/images/section3-bottom.png" alt="section3-bottom" class="section3-bottom position-absolute">
         </section>
 
         <!-- design section -->
@@ -940,7 +943,8 @@
 
                     <div class="accordian-box">
                         <div class="accordian-h-svg d-flex align-items-center justify-content-between">
-                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q1. How does the CVhawk work?</div>
+                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q1. How does the
+                                CVhawk work?</div>
                             <div class="accordian-svg">
                                 <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -950,88 +954,111 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-24">Absolutely! We understand that your CV is a dynamic document that may require updates and modifications over time. Once
-                        you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.</div>
+                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-24">Absolutely! We understand
+                            that your CV is a dynamic document that may require updates and modifications over time.
+                            Once
+                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.
+                        </div>
                     </div>
 
                     <div class="accordian-box">
                         <div class="accordian-h-svg d-flex align-items-center justify-content-between">
-                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q2. Is the CVhawk completely free to use?</div>
+                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q2. Is the CVhawk
+                                completely free to use?</div>
                             <div class="accordian-svg">
-                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.939215 1.4299L9.90997 10.1745C10.0675 10.3281 10.2789 10.4141 10.4989 10.4141C10.7189 10.4141 10.9303 10.3281 11.0878 10.1745L20.062 1.4299C20.1354 1.35835 20.1938 1.27281 20.2337 1.17833C20.2736 1.08384 20.2941 0.982327 20.2941 0.879771C20.2941 0.777216 20.2736 0.675698 20.2337 0.581213C20.1938 0.486728 20.1354 0.40119 20.062 0.329646C19.9113 0.182459 19.709 0.100057 19.4983 0.100057C19.2877 0.100057 19.0854 0.182459 18.9347 0.329646L10.4989 8.55283L2.06478 0.329646C1.91416 0.182963 1.71223 0.100881 1.502 0.100881C1.29176 0.100881 1.08983 0.182963 0.939215 0.329646C0.865735 0.40119 0.807333 0.486728 0.767455 0.581213C0.727577 0.675698 0.707031 0.777216 0.707031 0.879771C0.707031 0.982327 0.727577 1.08384 0.767455 1.17833C0.807333 1.27281 0.865735 1.35835 0.939215 1.4299Z"
                                         fill="black" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand that your CV is a
+                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand
+                            that your CV is a
                             dynamic document that may require updates and modifications over time. Once
-                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.</div>
+                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.
+                        </div>
                     </div>
 
                     <div class="accordian-box">
                         <div class="accordian-h-svg d-flex align-items-center justify-content-between">
-                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q3. Can I edit my CV after I've saved it?</div>
+                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q3. Can I edit my CV
+                                after I've saved it?</div>
                             <div class="accordian-svg">
-                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.939215 1.4299L9.90997 10.1745C10.0675 10.3281 10.2789 10.4141 10.4989 10.4141C10.7189 10.4141 10.9303 10.3281 11.0878 10.1745L20.062 1.4299C20.1354 1.35835 20.1938 1.27281 20.2337 1.17833C20.2736 1.08384 20.2941 0.982327 20.2941 0.879771C20.2941 0.777216 20.2736 0.675698 20.2337 0.581213C20.1938 0.486728 20.1354 0.40119 20.062 0.329646C19.9113 0.182459 19.709 0.100057 19.4983 0.100057C19.2877 0.100057 19.0854 0.182459 18.9347 0.329646L10.4989 8.55283L2.06478 0.329646C1.91416 0.182963 1.71223 0.100881 1.502 0.100881C1.29176 0.100881 1.08983 0.182963 0.939215 0.329646C0.865735 0.40119 0.807333 0.486728 0.767455 0.581213C0.727577 0.675698 0.707031 0.777216 0.707031 0.879771C0.707031 0.982327 0.727577 1.08384 0.767455 1.17833C0.807333 1.27281 0.865735 1.35835 0.939215 1.4299Z"
                                         fill="black" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand that your CV is a
+                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand
+                            that your CV is a
                             dynamic document that may require updates and modifications over time. Once
-                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.</div>
+                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.
+                        </div>
                     </div>
 
                     <div class="accordian-box">
                         <div class="accordian-h-svg d-flex align-items-center justify-content-between">
-                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q4. Can I import my existing CV into the builder?</div>
+                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q4. Can I import my
+                                existing CV into the builder?</div>
                             <div class="accordian-svg">
-                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.939215 1.4299L9.90997 10.1745C10.0675 10.3281 10.2789 10.4141 10.4989 10.4141C10.7189 10.4141 10.9303 10.3281 11.0878 10.1745L20.062 1.4299C20.1354 1.35835 20.1938 1.27281 20.2337 1.17833C20.2736 1.08384 20.2941 0.982327 20.2941 0.879771C20.2941 0.777216 20.2736 0.675698 20.2337 0.581213C20.1938 0.486728 20.1354 0.40119 20.062 0.329646C19.9113 0.182459 19.709 0.100057 19.4983 0.100057C19.2877 0.100057 19.0854 0.182459 18.9347 0.329646L10.4989 8.55283L2.06478 0.329646C1.91416 0.182963 1.71223 0.100881 1.502 0.100881C1.29176 0.100881 1.08983 0.182963 0.939215 0.329646C0.865735 0.40119 0.807333 0.486728 0.767455 0.581213C0.727577 0.675698 0.707031 0.777216 0.707031 0.879771C0.707031 0.982327 0.727577 1.08384 0.767455 1.17833C0.807333 1.27281 0.865735 1.35835 0.939215 1.4299Z"
                                         fill="black" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand that your CV is a
+                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand
+                            that your CV is a
                             dynamic document that may require updates and modifications over time. Once
-                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.</div>
+                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.
+                        </div>
                     </div>
 
                     <div class="accordian-box">
                         <div class="accordian-h-svg d-flex align-items-center justify-content-between">
-                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q5. Is my personal information safe and secure?</div>
+                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q5. Is my personal
+                                information safe and secure?</div>
                             <div class="accordian-svg">
-                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.939215 1.4299L9.90997 10.1745C10.0675 10.3281 10.2789 10.4141 10.4989 10.4141C10.7189 10.4141 10.9303 10.3281 11.0878 10.1745L20.062 1.4299C20.1354 1.35835 20.1938 1.27281 20.2337 1.17833C20.2736 1.08384 20.2941 0.982327 20.2941 0.879771C20.2941 0.777216 20.2736 0.675698 20.2337 0.581213C20.1938 0.486728 20.1354 0.40119 20.062 0.329646C19.9113 0.182459 19.709 0.100057 19.4983 0.100057C19.2877 0.100057 19.0854 0.182459 18.9347 0.329646L10.4989 8.55283L2.06478 0.329646C1.91416 0.182963 1.71223 0.100881 1.502 0.100881C1.29176 0.100881 1.08983 0.182963 0.939215 0.329646C0.865735 0.40119 0.807333 0.486728 0.767455 0.581213C0.727577 0.675698 0.707031 0.777216 0.707031 0.879771C0.707031 0.982327 0.727577 1.08384 0.767455 1.17833C0.807333 1.27281 0.865735 1.35835 0.939215 1.4299Z"
                                         fill="black" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand that your CV is a
+                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand
+                            that your CV is a
                             dynamic document that may require updates and modifications over time. Once
-                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.</div>
+                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.
+                        </div>
                     </div>
 
                     <div class="accordian-box">
                         <div class="accordian-h-svg d-flex align-items-center justify-content-between">
-                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q6. What kind of templates are available in the CV builder?</div>
+                            <div class="accordian-h fw-400 fs-24 lh-150 black-color ff-rubik py-4">Q6. What kind of
+                                templates are available in the CV builder?</div>
                             <div class="accordian-svg">
-                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="21" height="11" viewBox="0 0 21 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0.939215 1.4299L9.90997 10.1745C10.0675 10.3281 10.2789 10.4141 10.4989 10.4141C10.7189 10.4141 10.9303 10.3281 11.0878 10.1745L20.062 1.4299C20.1354 1.35835 20.1938 1.27281 20.2337 1.17833C20.2736 1.08384 20.2941 0.982327 20.2941 0.879771C20.2941 0.777216 20.2736 0.675698 20.2337 0.581213C20.1938 0.486728 20.1354 0.40119 20.062 0.329646C19.9113 0.182459 19.709 0.100057 19.4983 0.100057C19.2877 0.100057 19.0854 0.182459 18.9347 0.329646L10.4989 8.55283L2.06478 0.329646C1.91416 0.182963 1.71223 0.100881 1.502 0.100881C1.29176 0.100881 1.08983 0.182963 0.939215 0.329646C0.865735 0.40119 0.807333 0.486728 0.767455 0.581213C0.727577 0.675698 0.707031 0.777216 0.707031 0.879771C0.707031 0.982327 0.727577 1.08384 0.767455 1.17833C0.807333 1.27281 0.865735 1.35835 0.939215 1.4299Z"
                                         fill="black" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand that your CV is a
+                        <div class="accordian-p fw-400 fs-16 lh-150 ff-rubik color-33 pb-4">Absolutely! We understand
+                            that your CV is a
                             dynamic document that may require updates and modifications over time. Once
-                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.</div>
+                            you've saved your CV using our CVhawk, you can easily edit and make changes whenever needed.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1041,12 +1068,114 @@
         <section class="section8 mt-100 mt-sm-120 mt-lg-160">
             <div class="container">
                 <div class="red-box mx-auto d-flex flex-column justify-content-center align-items-center">
-                <div class="red-h ff-rubik white-color lh-150 fw-500 fs-40 text-center">Your Path to Success Starts Here: Build Your CV Today</div>
-                <p class="red-p fw-400 fs-16 lh-150 color-f9 text-center pt-16">Our CV builder not only provides a user-friendly interface but also offers valuable guidance along the way.</p>
-                <button class="start-btn fw-600 fs-16 lh-150 black-color ff-rubik d-flex justify-content-center align-items-center mx-auto mt-40">Get Started</button>
+                    <div class="red-h ff-rubik white-color lh-150 fw-500 fs-40 text-center">Your Path to Success Starts
+                        Here: Build Your CV Today</div>
+                    <p class="red-p fw-400 fs-16 lh-150 color-f9 text-center pt-16">Our CV builder not only provides a
+                        user-friendly interface but also offers valuable guidance along the way.</p>
+                    <button
+                        class="start-btn fw-600 fs-16 lh-150 black-color ff-rubik d-flex justify-content-center align-items-center mx-auto mt-40">Get
+                        Started</button>
                 </div>
             </div>
         </section>
+
+        <!-- footer section -->
+        <footer class="bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5 col-xl-6">
+                        <img src="./assets/images/logo.png" alt="logo" class="logo">
+                        <div class="footer-p color-e2 fw-400 fs-16 lh-150">Sit urna ornare sed quam molestie sit
+                            placerat convallis. Ac condimentum mollis malesuada placerat in placerat id
+                            facilisis.</div>
+                        <div class="all-social-icons d-flex align-items-center gap-30">
+                            <div class="twiter-icons commen-icons">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.804 1.76871C26.0929 1.77112 26.3756 1.8525 26.6215 2.00405C26.8675 2.1556 27.0673 2.37154 27.1993 2.62849C27.3313 2.88544 27.3905 3.17361 27.3705 3.46181C27.3505 3.75 27.2521 4.02723 27.0858 4.26348L25.49 6.5316C25.392 14.3207 22.787 19.6089 17.7469 22.2507C15.3451 23.4443 12.6915 24.0426 10.0099 23.9951C6.69401 24.0713 3.41735 23.2659 0.514696 21.6611C0.319433 21.5299 0.168521 21.3425 0.0818546 21.1238C-0.004812 20.9051 -0.0231644 20.6653 0.029217 20.4359C0.078256 20.2031 0.196719 19.9907 0.368972 19.8267C0.541225 19.6626 0.759171 19.5546 0.994049 19.517C2.944 19.2447 4.86417 18.7904 6.72944 18.1601C-1.62937 14.2931 0.193085 5.60046 0.989454 2.9311C1.06709 2.66608 1.21307 2.42615 1.41274 2.23538C1.61241 2.04462 1.85874 1.90973 2.12702 1.84425C2.39529 1.77877 2.67607 1.78501 2.94118 1.86234C3.20628 1.93967 3.44638 2.08537 3.63738 2.28481C6.08413 4.80598 9.32824 6.40233 12.8186 6.80268C12.7567 5.8647 12.9016 4.92458 13.2433 4.04886C13.585 3.17313 14.115 2.38321 14.7957 1.73501C15.9751 0.615757 17.5407 -0.0056661 19.1666 3.89365e-05C20.7925 0.00574397 22.3537 0.638138 23.5252 1.76564L25.804 1.76871ZM2.23148 20.8693C5.0831 22.2048 11.7665 23.6551 17.0363 20.8938C21.5618 18.5215 23.8912 13.6469 23.9601 6.40449C23.9632 6.16501 24.039 5.93214 24.1776 5.73677L25.8331 3.38135L25.7703 3.30018C24.977 3.28946 24.1944 3.27874 23.3965 3.30018C23.0854 3.29306 22.7876 3.17272 22.5588 2.96173C21.6772 2.06809 20.4802 1.55594 19.2251 1.53532C17.9699 1.5147 16.7568 1.98726 15.8463 2.85146C15.2615 3.40764 14.8244 4.10067 14.5744 4.86802C14.3244 5.63537 14.2694 6.45289 14.4144 7.2468C14.4411 7.3947 14.4337 7.54673 14.3928 7.69135C14.3519 7.83598 14.2787 7.96939 14.1785 8.08146C14.0826 8.19451 13.9604 8.28227 13.8226 8.33701C13.6848 8.39176 13.5357 8.41181 13.3883 8.39541C9.27355 8.10827 5.40991 6.31116 2.53931 3.34919C1.51322 6.5316 0.211462 14.2135 8.4646 17.232C8.63829 17.2944 8.79054 17.405 8.90342 17.551C9.0163 17.697 9.08509 17.8722 9.1017 18.056C9.12037 18.237 9.08707 18.4195 9.0057 18.5823C8.92433 18.745 8.79825 18.8812 8.64225 18.9749C6.6255 19.9583 4.45886 20.5986 2.23148 20.8693Z"
+                                        fill="#FAFAFA" />
+                                </svg>
+                            </div>
+                            <div class="face-icons commen-icons">
+                                <svg width="16" height="26" viewBox="0 0 16 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.574 1H10.974C9.38272 1 7.8566 1.63214 6.73138 2.75736C5.60616 3.88258 4.97402 5.4087 4.97402 7V10.6H1.37402V15.4H4.97402V25H9.77402V15.4H13.374L14.574 10.6H9.77402V7C9.77402 6.68174 9.90045 6.37652 10.1255 6.15147C10.3505 5.92643 10.6558 5.8 10.974 5.8H14.574V1Z"
+                                        stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="insta-icons commen-icons">
+                                <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.5745 18.3346C14.989 18.3346 16.3456 17.7727 17.3458 16.7725C18.346 15.7723 18.9079 14.4158 18.9079 13.0013C18.9079 11.5868 18.346 10.2303 17.3458 9.23007C16.3456 8.22987 14.989 7.66797 13.5745 7.66797C12.1601 7.66797 10.8035 8.22987 9.80331 9.23007C8.80311 10.2303 8.24121 11.5868 8.24121 13.0013C8.24121 14.4158 8.80311 15.7723 9.80331 16.7725C10.8035 17.7727 12.1601 18.3346 13.5745 18.3346Z"
+                                        stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1.57422 18.3333V7.66667C1.57422 5.89856 2.2766 4.20286 3.52684 2.95262C4.77708 1.70238 6.47278 1 8.24089 1H18.9076C20.6757 1 22.3714 1.70238 23.6216 2.95262C24.8718 4.20286 25.5742 5.89856 25.5742 7.66667V18.3333C25.5742 20.1014 24.8718 21.7971 23.6216 23.0474C22.3714 24.2976 20.6757 25 18.9076 25H8.24089C6.47278 25 4.77708 24.2976 3.52684 23.0474C2.2766 21.7971 1.57422 20.1014 1.57422 18.3333Z"
+                                        stroke="#FAFAFA" stroke-width="1.5" />
+                                    <path d="M20.9072 5.67873L20.9206 5.66406" stroke="#FAFAFA" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 col-xl-6 pt-62">
+                        <div class="row">
+                            <div class="col-4 col-sm-6 col-md-4">
+                                <p class="ff-rubik fw-500 fs-16 lh-150 white-color">Quick Links</p>
+                                <p class="pt-20"><a href="#" class="ff-rubik fw-400 fs-16 color-e2 lh-150">Home</a></p>
+                                <p class="pt-20"><a href="#" class="ff-rubik fw-400 fs-16 color-e2 lh-150">About</a></p>
+                                <p class="pt-20"><a href="#" class="ff-rubik fw-400 fs-16 color-e2 lh-150">We’ll help
+                                        you</a></p>
+                                <p class="pt-20"><a href="#"
+                                        class="ff-rubik fw-400 fs-16 color-e2 lh-150">Testimonials</a></p>
+                            </div>
+
+                            <div class="col-8 col-sm-6 col-md-4">
+                                <p class="ff-rubik fw-500 fs-16 lh-150 white-color">Support</p>
+                                <div class="pt-20 d-flex align-items-center gap-6">
+                                    <div>
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.0179 8.53906L9.43042 8.35781C9.24376 8.33589 9.05455 8.35656 8.87702 8.41826C8.69949 8.47996 8.53825 8.5811 8.40542 8.71406L7.25542 9.86406C5.48116 8.9617 4.03903 7.51957 3.13667 5.74531L4.29292 4.58906C4.56167 4.32031 4.69292 3.94531 4.64917 3.56406L4.46792 1.98906C4.43249 1.68417 4.28617 1.40296 4.05682 1.19897C3.82747 0.994975 3.53111 0.882449 3.22417 0.882813H2.14292C1.43667 0.882813 0.849171 1.47031 0.892921 2.17656C1.22417 7.51406 5.49292 11.7766 10.8242 12.1078C11.5304 12.1516 12.1179 11.5641 12.1179 10.8578V9.77656C12.1242 9.14531 11.6492 8.61406 11.0179 8.53906Z"
+                                                fill="#FAFAFA" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="ff-rubik fw-400 fs-16 color-e2 lh-150">+012 345 67890</a>
+                                    </div>
+                                </div>
+
+                                <div class="pt-20 d-flex align-items-center gap-6">
+                                    <div>
+                                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.5 0.5H1.5C0.8125 0.5 0.25625 1.0625 0.25625 1.75L0.25 9.25C0.25 9.9375 0.8125 10.5 1.5 10.5H11.5C12.1875 10.5 12.75 9.9375 12.75 9.25V1.75C12.75 1.0625 12.1875 0.5 11.5 0.5ZM11.5 3L6.5 6.125L1.5 3V1.75L6.5 4.875L11.5 1.75V3Z"
+                                                fill="#FAFAFA" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <a href="mailto:someone@example.com"
+                                            class="ff-rubik fw-400 fs-16 color-e2 lh-150">Cvhawk@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 pt-4 pt-md-0 col-md-4">
+                                <p class="ff-rubik fw-500 fs-16 lh-150 white-color">Legal</p>
+                                <p class="pt-20"><a href="#" class="ff-rubik fw-400 fs-16 color-e2 lh-150">Privacy Policy</a></p>
+                                <p class="pt-20"><a href="#" class="ff-rubik fw-400 fs-16 color-e2 lh-150">Terms & conditions</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

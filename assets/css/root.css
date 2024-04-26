@@ -59,6 +59,7 @@
   --color-33: #333333;
   --color-e5: #e5e5e5;
   --color-19: #191919;
+  --color-e2: #E2E2E2;
   --body-color: #fffefe;
   --btns-color: #f36a3e;
   --white-color: #ffffff;
@@ -223,6 +224,14 @@
 
 .color-f9{
   color: var(--color-f9);
+}
+
+.bg-black{
+  background-color: var(--black-color);
+}
+
+.color-e2{
+  color: var(--color-e2);
 }
 
 h2 {
