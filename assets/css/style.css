@@ -154,6 +154,10 @@
   background-image: url(../images/sun.png);
 }
 
+.border-none{
+  border: unset !important;
+}
+
 /* main section animation here */
 
 .left-1,

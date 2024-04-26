@@ -97,21 +97,30 @@ let accordion_boxes = document.querySelectorAll(".accordian-box");
 accordion_boxes.forEach((items) => {
   let accordion_title = items.querySelector(".accordian-h-svg");
   let accordion_p = items.querySelector(".accordian-p");
+  let svg = items.querySelector(".accordian-svg");
 
   accordion_title.addEventListener("click", () => {
     accordion_boxes.forEach((otherBox) => {
       if (otherBox !== items) {
         let otherAccordion_p = otherBox.querySelector(".accordian-p");
+        const svg = otherBox.querySelector(".accordian-svg");
         otherAccordion_p.classList.add("d-none");
+        svg.style.transform = "rotate(0deg)";
+        svg.style.right = "0px";
       }
     });
 
     if (accordion_p.classList.contains("d-none")) {
       accordion_p.classList.remove("d-none");
       accordion_p.classList.add("d-inline-block");
+      svg.style.transform = "rotate(180deg)";
+      svg.style.position = "relative";
+      svg.style.right = "33px";
     } else {
       accordion_p.classList.add("d-none");
       accordion_p.classList.remove("d-inline-block");
+      svg.style.transform = "rotate(0deg)";
+      svg.style.right = "0px";
     }
   });
 });
