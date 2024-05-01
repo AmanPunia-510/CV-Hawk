@@ -536,10 +536,6 @@
   width: 100%;
 }
 
-.sub-footer>span{
-  cursor: pointer;
-}
-
 /* hover */
 
 .commen-btn:hover {
